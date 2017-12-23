@@ -14,19 +14,8 @@
 
 - define proxy interface in the client
 
-package com.example.demo;
+![image](https://user-images.githubusercontent.com/31741868/34316970-42dbe134-e769-11e7-8492-008cacc1e598.png)
 
-import org.springframework.cloud.netflix.feign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-@FeignClient(name="Feign-proxy",url="localhost:8091")
-public interface FeignProxy {
-	
-	@RequestMapping(value="/serviceb",method=RequestMethod.GET)
-	public String sayHello();
-
-}
 
 
 
