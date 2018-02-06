@@ -36,9 +36,7 @@ public class ServiceAApplication {
 	public String callServiceAB()
 	{
 		String str = callServiceA() + "\n";
-		
-		RestTemplate resttemplate= new RestTemplate();
-		
+				
 		//str += resttemplate.getForObject("http://localhost:8091/serviceb", String.class);
 		str += feignproxy.sayHello();
 		
